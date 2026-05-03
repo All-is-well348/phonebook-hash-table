@@ -1,0 +1,17 @@
+#ifndef PHONEBOOK_H
+#define PHONEBOOK_H
+
+#include "Contact.h"
+
+class PhoneBook {
+private:
+    static const int SIZE = 10;
+    Contact* table[SIZE];
+    int totalContacts;
+
+public:
+    PhoneBook();
+    int hashFunction(string name);
+};
+
+#endif
