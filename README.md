@@ -9,3 +9,7 @@ Day 2:
 Created PhoneBook structure
 Implemented Hash Function
 Initialized Hash Table buckets
+
+Day 3:
+Implemented Add Contact feature
+Added collision handling using chaining

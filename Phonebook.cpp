@@ -17,3 +17,23 @@ int PhoneBook::hashFunction(string name) {
 
     return sum % SIZE;
 }
+void PhoneBook::addContact(string name, string phone) {
+    int index = hashFunction(name);
+
+    Contact* newNode = new Contact(name, phone);
+
+    if(table[index] == NULL) {
+        table[index] = newNode;
+    }
+    else {
+        Contact* temp = table[index];
+
+        while(temp->next != NULL) {
+            temp = temp->next;
+        }
+
+        temp->next = newNode;
+    }
+
+    totalContacts++;
+}
