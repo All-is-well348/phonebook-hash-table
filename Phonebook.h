@@ -13,6 +13,7 @@ public:
     PhoneBook();
     int hashFunction(string name);
     void addContact(string name, string phone);
+    void searchContact(string name);
 };
 
 #endif

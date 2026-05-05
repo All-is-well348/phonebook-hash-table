@@ -37,3 +37,21 @@ void PhoneBook::addContact(string name, string phone) {
 
     totalContacts++;
 }
+void PhoneBook::searchContact(string name) {
+    int index = hashFunction(name);
+
+    Contact* temp = table[index];
+
+    while(temp != NULL) {
+        if(temp->name == name) {
+            cout << "Contact Found" << endl;
+            cout << "Name: " << temp->name << endl;
+            cout << "Phone: " << temp->phone << endl;
+            return;
+        }
+
+        temp = temp->next;
+    }
+
+    cout << "Contact Not Found" << endl;
+}

@@ -13,3 +13,8 @@ Initialized Hash Table buckets
 Day 3:
 Implemented Add Contact feature
 Added collision handling using chaining
+
+Day 4:
+Implemented Search Contact feature
+Traversed linked list for searching
+Handled not found case
