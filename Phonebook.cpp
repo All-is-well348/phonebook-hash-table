@@ -55,3 +55,32 @@ void PhoneBook::searchContact(string name) {
 
     cout << "Contact Not Found" << endl;
 }
+
+void PhoneBook::deleteContact(string name) {
+    int index = hashFunction(name);
+
+    Contact* temp = table[index];
+    Contact* prev = NULL;
+
+    while(temp != NULL && temp->name != name) {
+        prev = temp;
+        temp = temp->next;
+    }
+
+    if(temp == NULL) {
+        cout << "Contact Not Found" << endl;
+        return;
+    }
+
+    if(prev == NULL) {
+        table[index] = temp->next;
+    }
+    else {
+        prev->next = temp->next;
+    }
+
+    delete temp;
+    totalContacts--;
+
+    cout << "Contact Deleted Successfully" << endl;
+}

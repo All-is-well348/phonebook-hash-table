@@ -14,6 +14,7 @@ public:
     int hashFunction(string name);
     void addContact(string name, string phone);
     void searchContact(string name);
+    void deleteContact(string name);
 };
 
 #endif

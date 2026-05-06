@@ -18,3 +18,8 @@ Day 4:
 Implemented Search Contact feature
 Traversed linked list for searching
 Handled not found case
+
+Day 5:
+Implemented Delete Contact feature
+Handled linked list node deletion
+Updated total contact count
