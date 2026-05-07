@@ -23,3 +23,8 @@ Day 5:
 Implemented Delete Contact feature
 Handled linked list node deletion
 Updated total contact count
+
+Day 6:
+Implemented Display Contacts feature
+Implemented Load Factor calculation
+Traversed all hash table buckets

@@ -15,6 +15,8 @@ public:
     void addContact(string name, string phone);
     void searchContact(string name);
     void deleteContact(string name);
+    void displayContacts();
+    float loadFactor();
 };
 
 #endif
