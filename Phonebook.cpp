@@ -84,3 +84,21 @@ void PhoneBook::deleteContact(string name) {
 
     cout << "Contact Deleted Successfully" << endl;
 }
+
+void PhoneBook::displayContacts() {
+    for(int i = 0; i < SIZE; i++) {
+        Contact* temp = table[i];
+
+        while(temp != NULL) {
+            cout << "Name: " << temp->name << endl;
+            cout << "Phone: " << temp->phone << endl;
+            cout << "----------------" << endl;
+
+            temp = temp->next;
+        }
+    }
+}
+
+float PhoneBook::loadFactor() {
+    return (float)totalContacts / SIZE;
+}
