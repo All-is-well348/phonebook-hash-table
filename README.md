@@ -28,3 +28,6 @@ Day 6:
 Implemented Display Contacts feature
 Implemented Load Factor calculation
 Traversed all hash table buckets
+
+Day 7:
+created the main class
